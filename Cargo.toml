@@ -1,0 +1,16 @@
+[package]
+name = "text_analyzer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "text_analyzer"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.16.5", features = ["extension-module"] }
+rayon = "1.5.3"
+
+[package.metadata.maturin]
+python-source = "python"
