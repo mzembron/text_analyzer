@@ -1,4 +1,3 @@
-from text_analyzer import parallel_text_analysis
 import streamlit as st
 from gui import Gui
 import os
@@ -19,6 +18,7 @@ import os
 
 
 st.config.dataFrameSerialization = "arrow"
+st.set_page_config(page_title="Text analyzer", page_icon="📄")
 if __name__ == "__main__":
     gui = Gui()
     gui.main()
